@@ -27,7 +27,7 @@ class ArticleFragment: Fragment(R.layout.fragment_article)  {
         super.onViewCreated(view, savedInstanceState)
 
         val newsRepository = NewsRepository(ArticleDatabase(context!!))
-        val viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
+        val viewModelProviderFactory = NewsViewModelProviderFactory(activity!!.application,newsRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory)[NewsViewModel::class.java]
 
         val myFabSrc = resources.getDrawable(R.drawable.ic_favorite)

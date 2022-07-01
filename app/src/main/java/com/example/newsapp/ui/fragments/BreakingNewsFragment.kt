@@ -3,6 +3,7 @@ package com.example.newsapp.ui.fragments
 import android.os.Bundle
 import android.view.View
 import android.widget.AbsListView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -53,6 +54,7 @@ class BreakingNewsFragment: Fragment(R.layout.fragment_breaking_news) {
                     hideProgressBar()
                     response.message?.let { message ->
                         print(message)
+                        Toast.makeText(activity, "Error: $message", Toast.LENGTH_LONG).show()
                     }
                 }
                 is Resource.Loading -> {
