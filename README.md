@@ -1,9 +1,10 @@
 # NewsApp
 A simple News App using <a href="https://newsapi.org/">newsapi</a>
-  get breaking news.
-  see the article details using webview.
-  save article that you like in the room db.
-  search for news.
+  get breaking news.<br>
+  see the article details using webview.<br>
+  save article that you like in the room db.<br>
+  search for news.<br>
+  
 # Technologies
 Kotlin<br>
 MVVM architecture<br>
