@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation_menu"
-        android:background="#1e234b"
+        android:background="@color/blue"
         app:itemIconTint="@color/bottom_nav_color"
         app:labelVisibilityMode="unlabeled" />
 
